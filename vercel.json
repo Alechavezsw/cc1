@@ -10,6 +10,10 @@
     {
       "src": "/languages",
       "dest": "/api/languages.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/5f822cb6-316e-49b9-9a1b-70ec38c7942f.htm"
     }
   ]
 }
