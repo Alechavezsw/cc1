@@ -88,11 +88,47 @@ Puedes modificar estos valores según tus necesidades.
 - El formulario de contacto actualmente solo muestra una alerta. Necesitarás configurar un backend o servicio de email para procesar los envíos.
 - GSAP está configurado con ScrollTrigger para todas las animaciones basadas en scroll.
 
-## 🚀 Deploy
+## 🚀 Deploy en Vercel
 
-Para desplegar en Vercel:
+### Opción 1: Desde la Web de Vercel (Recomendado)
 
-1. Conecta tu repositorio a Vercel
-2. Vercel detectará automáticamente Next.js
-3. El deploy se realizará automáticamente
+1. Ve a [vercel.com](https://vercel.com) e inicia sesión con tu cuenta de GitHub
+2. Haz clic en **"Add New Project"**
+3. Importa el repositorio `Alechavezsw/cc`
+4. Vercel detectará automáticamente Next.js y configurará todo
+5. Haz clic en **"Deploy"**
+6. ¡Listo! Tu sitio estará en vivo en unos minutos
+
+### Opción 2: Desde la CLI
+
+```bash
+# Instala Vercel CLI globalmente
+npm i -g vercel
+
+# En el directorio del proyecto
+vercel
+
+# Para producción
+vercel --prod
+```
+
+### Configuración Automática
+
+- **Framework**: Next.js (detectado automáticamente)
+- **Build Command**: `npm run build`
+- **Output Directory**: `.next`
+- **Install Command**: `npm install`
+
+### Variables de Entorno (si las necesitas)
+
+Si necesitas variables de entorno:
+1. Ve a tu proyecto en Vercel
+2. Settings → Environment Variables
+3. Agrega las variables necesarias
+
+### Dominio Personalizado
+
+1. Ve a Settings → Domains
+2. Agrega tu dominio personalizado
+3. Sigue las instrucciones de DNS
 
